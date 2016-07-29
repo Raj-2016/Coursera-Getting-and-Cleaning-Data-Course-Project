@@ -1,7 +1,5 @@
 ### Load the dplyr package
 
-install.packages('plyr')
-
 library(plyr)
 
 ### Task 1 - Merges the training and the test sets to create one data set.
@@ -67,4 +65,9 @@ all_data <- cbind(xData, YData, SubjectData)
 # 66 <- 68 columns but last two (activity & subject)
 averages_data <- ddply(all_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
+head(averages_data)
+
 write.table(averages_data, "averages_data.txt", row.name=FALSE)
+
+
+

@@ -8,4 +8,4 @@ The script run_analysis.Rperforms the 5 steps described in the course project's 
     
 Variables
 
-x_train, y_train, x_test, y_test, subject_train and subject_test contain the data from the downloaded files.
+xTrain, yTrain, xTest, yTest, SubjectTrain and SubjectTest contain the data from the downloaded files.
